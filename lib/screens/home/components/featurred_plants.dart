@@ -14,11 +14,18 @@ class FeaturedPlants extends StatelessWidget {
       child: Row(
         children: <Widget>[
           FeaturePlantCard(
-            image: "assets/images/bottom_img_1.png",
+            image: "assets/images/1.png",
+            title: "UI/UX",
             press: () {},
           ),
           FeaturePlantCard(
-            image: "assets/images/bottom_img_2.png",
+            image: "assets/images/2.png",
+            title: "Web Dev",
+            press: () {},
+          ),
+          FeaturePlantCard(
+            image: "assets/images/3.png",
+            title: "Mob Dev",
             press: () {},
           ),
         ],
@@ -31,9 +38,11 @@ class FeaturePlantCard extends StatelessWidget {
   const FeaturePlantCard({
     Key key,
     this.image,
+    this.title,
     this.press,
   }) : super(key: key);
   final String image;
+  final String title;
   final Function press;
 
   @override
